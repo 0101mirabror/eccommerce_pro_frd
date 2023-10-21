@@ -91,3 +91,5 @@ class ContactTestCase(APITestCase):
         data["email"] = "test"
         response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+ 
